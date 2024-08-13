@@ -28,6 +28,8 @@ export const thumbnailShoe1 = '../../assets/images/thumbnail-shoe1.svg';
 export const thumbnailShoe2 = '../../assets/images/thumbnail-shoe2.svg';
 export const thumbnailShoe3 = '../../assets/images/thumbnail-shoe3.svg';
 
+export const bgCard = '../../assets/images/thumbnail-background.svg';
+
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about-us", label: "About Us" },

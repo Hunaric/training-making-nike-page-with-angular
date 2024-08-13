@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { arrowRight, bigShoe1, statistics } from '../../shared/constants';
+import { arrowRight, bigShoe1, statistics, shoes, bgCard, collectionBackground } from '../../shared/constants';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -35,8 +35,22 @@ import { CommonModule } from '@angular/common';
       </div>
     </div>
 
-    <div>
-      <img src="{{ bigShoe1 }}" alt="Big Shoe 1">
+    <div class="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-gray-100 bg-cover bg-center" [ngStyle]="{'background-image': 'url(' + bgBigCard + ')'}">
+      <img src="{{ bigShoeImage }}" alt="Big Shoe 1" width="610px" height="500px" class="object-contain relative z-10">
+      <div class="flex sm:gap-6 absolute -bottom-[5%]">
+        <div class="" *ngFor="let shoe of shoes">
+          <div class="border-2 rounded-xl cursor-pointer max-sm:flex-1" [ngClass]="bigShoeImage === shoe.bigShoe ? 'border-red-400' : 'border-transparent'" (click)="changeBigShoe(shoe)">
+            <div class="flex justify-center items-center bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
+            [ngStyle]="{'background-image': 'url(' + bgCard + ')'}"
+            >
+              <img 
+               src="{{ shoe.bigShoe }}" alt="shoe collection" width="127px" height="103px" class="object-contain"
+              >
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     </section>
   `,
@@ -45,6 +59,18 @@ import { CommonModule } from '@angular/common';
 export class HeroComponent {
   arrowRight = arrowRight;
   statistics = statistics;
-  bigShoe1 = bigShoe1;
+  bigShoeImage = bigShoe1;
+  shoes = shoes;
+  bgCard = bgCard;
+  bgBigCard = collectionBackground;
+
+  changeBigShoe(shoe: any) {
+    if(this.bigShoeImage !== shoe.bigShoe) {
+      // changeBigShoeImage(shoe.bigShoe)
+      this.bigShoeImage = shoe.bigShoe;
+      console.log('Shoe changed: ', shoe.bigShoe)
+    }
+
+  }
 
 }
