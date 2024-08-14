@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 
+@layer components {
 .max-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -14,4 +15,13 @@
 
 .input {
 @apply sm:flex-1 max-sm:w-full text-base leading-normal pl-5 max-sm:p-5 outline-none sm:border-none border  max-sm:rounded-full;
+}
+
+}
+
+@layer utilities {
+  
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
 }
