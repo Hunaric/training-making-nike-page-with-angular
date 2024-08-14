@@ -24,4 +24,10 @@
   .padding-l {
     @apply sm:pl-16 pl-8;
   }
+
+  
+  .info-text {
+    @apply text-gray-400 text-lg leading-7;
+  }
+  
 }

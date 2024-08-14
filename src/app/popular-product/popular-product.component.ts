@@ -26,7 +26,7 @@ import { CommonModule } from '@angular/common';
             <p class="font-montserrat text-xl leading-normal text-gray-400">(4.5)</p>
           </div>
           <h3 class="mt-2 text-2xl leading-normal font-semibold font-palanquin">{{ prod.name }}</h3>
-          <p class="mt-2 font-semibold font-montserrat text-red-400 text-2xl leading-normal">{{ prod.price }}</p>
+          <p class="mt-2 font-semibold font-montserrat text-red-400 text-2lx leading-normal">{{ prod.price }}</p>
         </div>
       </div>
     </div>
