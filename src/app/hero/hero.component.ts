@@ -75,7 +75,7 @@ import { CommonModule } from '@angular/common';
           class="object-contain relative z-10"
         />
         <div
-          class="flex sm:gap-6 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6"
+          class="flex sm:gap-6 absolute -bottom-[10%] sm:left-[10%] max-sm:px-6"
         >
           <div class="" *ngFor="let shoe of shoes">
             <div
