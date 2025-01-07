@@ -51,7 +51,7 @@ import { CommonModule } from '@angular/common';
       <div class="flex justify-between text-white mt-24 max-sm:flex-col max-sm:items-center">
 <div class="flex justify-start items-center gap-2 font-montserrat cursor-pointer">
   <img src="{{ copyright }}" alt="copy right sign" height="20px" width="20px" class="rounded-full m-0">
-  <p>Copyright. All rights reserved.</p>
+  <p>Copyright | All rights reserved | hugueszedev@gmail.com</p>
 </div>
 <p class="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
