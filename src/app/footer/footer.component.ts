@@ -42,7 +42,7 @@ import { CommonModule } from '@angular/common';
             <h4 class="text-white font-montserrat text-2xl leading-normal font-medium mb-6">{{ link.title }}</h4>
             <ul>
               <li *ngFor="let section of link.links" class="mt-3 text-white font-montserrat text-base leading-normal hover:text-gray-400 cursor-pointer">
-                <a href="">{{ section.name }}</a>
+                <a href="{{ section.link }}">{{ section.name }}</a>
               </li>
             </ul>
           </div>
